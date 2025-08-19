@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint"  content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--img src="my login.jpg" alt="Login Page"-->
+
+    <h2 class="headings">Customer login</h2>
+    <p class="headings">Enter Details To View Portfolio</p>
+    <div class="container">
+        <form id="myForm" onsubmit="handleSubmit(event)">
+            <div class="row">
+                <div class="fieldname">
+                    <label for="fname">First Name</label>
+           </div>
+           <div class="typename">
+            <input type="text" name="fname" id="fname" placeholder="Enter Name">
+            </div>
+    </div>
+
+    <div>
+        <div class="fieldname">
+            <label for="lname">Last Name</label>
+        </div>
+        <div class="typename">
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </div>
+    </div>
+    <div>
+        <div class="fieldname">
+            <label for="mail">Email</label>
+        </div>
+        <div class="typename">
+            <input type="mail" name="mail" id="mail" placeholder="Enter Valid Email">
+            </div> 
+    </div><br>
+    <div class="row">
+        <button type="submit"class="submit-button" onclick="alert('Your details have been submitted')">Submit</button>
+    </div>
+    </form>
+
+    <script src="my login.js"></script>
+</body>
+</html>
